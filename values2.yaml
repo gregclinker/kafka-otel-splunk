@@ -1,0 +1,17 @@
+prometheus:
+    ruleSelectorNilUsesHelmValues: false
+    ruleNamespaceSelector:
+      matchLabels:
+        prometheus: monitoring
+    serviceMonitorSelectorNilUsesHelmValues: false
+    serviceMonitorNamespaceSelector:
+      matchLabels:
+        prometheus: monitoring
+    podMonitorSelectorNilUsesHelmValues: false
+    podMonitorNamespaceSelector:
+      matchLabels:
+        prometheus: monitoring
+    probeSelectorNilUsesHelmValues: false
+    probeNamespaceSelector:
+      matchLabels:
+        prometheus: monitoring
